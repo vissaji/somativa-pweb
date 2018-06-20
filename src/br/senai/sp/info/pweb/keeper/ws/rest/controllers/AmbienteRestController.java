@@ -32,6 +32,7 @@ public class AmbienteRestController {
 	
 	@GetMapping
 	public ResponseEntity<Object> buscarTodos() {
+		System.out.println("pi: "+ambienteService.buscarTodos());
 		try {
 			return ResponseEntity.ok(ambienteService.buscarTodos());
 		} catch (Exception e) {
